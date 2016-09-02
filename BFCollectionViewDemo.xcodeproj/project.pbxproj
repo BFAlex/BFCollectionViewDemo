@@ -15,6 +15,8 @@
 		A81ED5191D51CD6400498AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81ED5171D51CD6400498AF8 /* LaunchScreen.storyboard */; };
 		A81ED5241D51CD6400498AF8 /* BFCollectionViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A81ED5231D51CD6400498AF8 /* BFCollectionViewDemoTests.m */; };
 		A81ED52F1D51CD6400498AF8 /* BFCollectionViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A81ED52E1D51CD6400498AF8 /* BFCollectionViewDemoUITests.m */; };
+		A81ED53F1D52188F00498AF8 /* BFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A81ED53E1D52188F00498AF8 /* BFCollectionViewCell.m */; };
+		A81ED5411D5218B500498AF8 /* BFCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A81ED5401D5218B500498AF8 /* BFCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		A81ED52A1D51CD6400498AF8 /* BFCollectionViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFCollectionViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81ED52E1D51CD6400498AF8 /* BFCollectionViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFCollectionViewDemoUITests.m; sourceTree = "<group>"; };
 		A81ED5301D51CD6400498AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81ED53D1D52188F00498AF8 /* BFCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFCollectionViewCell.h; sourceTree = "<group>"; };
+		A81ED53E1D52188F00498AF8 /* BFCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFCollectionViewCell.m; sourceTree = "<group>"; };
+		A81ED5401D5218B500498AF8 /* BFCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		A81ED5081D51CD6300498AF8 /* BFCollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A81ED53C1D52183800498AF8 /* View */,
 				A81ED50C1D51CD6400498AF8 /* AppDelegate.h */,
 				A81ED50D1D51CD6400498AF8 /* AppDelegate.m */,
 				A81ED50F1D51CD6400498AF8 /* ViewController.h */,
@@ -138,6 +144,16 @@
 				A81ED5301D51CD6400498AF8 /* Info.plist */,
 			);
 			path = BFCollectionViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		A81ED53C1D52183800498AF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A81ED53D1D52188F00498AF8 /* BFCollectionViewCell.h */,
+				A81ED53E1D52188F00498AF8 /* BFCollectionViewCell.m */,
+				A81ED5401D5218B500498AF8 /* BFCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81ED5411D5218B500498AF8 /* BFCollectionViewCell.xib in Resources */,
 				A81ED5191D51CD6400498AF8 /* LaunchScreen.storyboard in Resources */,
 				A81ED5161D51CD6400498AF8 /* Assets.xcassets in Resources */,
 				A81ED5141D51CD6400498AF8 /* Main.storyboard in Resources */,
@@ -270,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81ED53F1D52188F00498AF8 /* BFCollectionViewCell.m in Sources */,
 				A81ED5111D51CD6400498AF8 /* ViewController.m in Sources */,
 				A81ED50E1D51CD6400498AF8 /* AppDelegate.m in Sources */,
 				A81ED50B1D51CD6400498AF8 /* main.m in Sources */,
@@ -496,6 +514,7 @@
 				A81ED5351D51CD6400498AF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A81ED5361D51CD6400498AF8 /* Build configuration list for PBXNativeTarget "BFCollectionViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +523,7 @@
 				A81ED5381D51CD6400498AF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A81ED5391D51CD6400498AF8 /* Build configuration list for PBXNativeTarget "BFCollectionViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +532,7 @@
 				A81ED53B1D51CD6400498AF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
